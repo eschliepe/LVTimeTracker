@@ -67,12 +67,18 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Internal Message Library" Type="Folder">
-			<Item Name="Internal Messaging Library.lvlib" Type="Library" URL="../Internal Message Library/Internal Messaging Library.lvlib"/>
+		<Item Name="External Messages" Type="Folder">
+			<Item Name="External_Messages.lvclass" Type="LVClass" URL="../External_Messages/External_Messages.lvclass"/>
 		</Item>
-		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
-		<Item Name="MainMenu.rtm" Type="Document" URL="../MainMenu.rtm"/>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="Task Management" Type="Folder">
+			<Item Name="Task_Management.lvclass" Type="LVClass" URL="../Task_Management/Task_Management.lvclass"/>
+		</Item>
+		<Item Name="Main_Process.lvlib" Type="Library" URL="../Main_Process.lvlib"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+			</Item>
+		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>

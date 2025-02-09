@@ -9,6 +9,8 @@
 	<Property Name="Database Path" Type="Str">C:\Program Files (x86)\National Instruments\LabVIEW 2016\data</Property>
 	<Property Name="Enable Alarms Logging" Type="Bool">true</Property>
 	<Property Name="Enable Data Logging" Type="Bool">true</Property>
+	<Property Name="NI.Lib.ContainingLib" Type="Str">Main_Process.lvlib</Property>
+	<Property Name="NI.Lib.ContainingLibPath" Type="Str">../../Main_Process.lvlib</Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)S!!!*Q(C=\&gt;7RD2."&amp;-&lt;R$U2![A[15Y?PA%P=AFNY,4C%U#W]A!&lt;=AA-;_&amp;JQ#YY")=X^&gt;_\*1O$$#3#%&lt;P@':X]T]_:XM_M^;2ZPJ4=;^Y[0PTRO^F^HDO@[78XW-_$78-XTZPJ0`:OR?;:`DNF1@X/\`E__/Y&gt;?DJ@D`TY_X0U3`0(PQ;PF?&lt;"]Z5UL7N*#S\,$Z#9XO=F.&lt;P)C,`)C,`)C,`)E4`)E4`)E4`)A$`)A$`)A$TU^;E1O=J',(**:X#RECJI#:D!5G2@D-2\D-2Y_SHC-RXC-RXA9)O-R(O-R(O.BGIT(?)T(?)S(5F0C?:,D-2\+K`!5HM*4?!I03[LQ&amp;)"CM;*Q513'CM\C4?%J0)7(NSI]B;@Q&amp;*\#1\=+4_%J0)7H]$"F\EJ.T8+3Y['-%E`C34S**`&amp;17IEH]33?R*.Y7%[**`%EC'4"J$A%*:/3!=G(R*.Y_+8%EXA34_**0(4.+Z2T:R&lt;.=J,D#4S"*`!%HM"$#17?Q".Y!E`AI;Q#4_!*0)%H],#5!E`A#4Q"*&amp;C5Z255#S9'AY)A]0!T\Z;96[GG*/9J^=WLPCH6.ZP[*F,@(/K,LL[9[IOEXHTVJKIX3\U*[D^/D6:DV)OI*S]$&gt;?(V4$P2DL1$&lt;5`&lt;U&lt;;U.7WV40X.!S_8C]\HMU[HEY\(IQ[(A`&lt;\P8;\H&lt;&lt;&lt;L&gt;&lt;LN6;LV@5R])\T_E$Y]&lt;HU\@U98T_.]?6BD-]0@_H`]T`Q&lt;.2L@&lt;]'?`1)CK?G`!!!!!!</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
