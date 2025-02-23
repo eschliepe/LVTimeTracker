@@ -40,6 +40,7 @@
 	</Item>
 	<Item Name="Queue Management" Type="Folder">
 		<Item Name="Create Queue.vi" Type="VI" URL="../Queue Management/Create Queue.vi"/>
+		<Item Name="DeQueue State.vi" Type="VI" URL="../Queue Management/DeQueue State.vi"/>
 		<Item Name="Process Name.vi" Type="VI" URL="../Queue Management/Process Name.vi"/>
 		<Item Name="Transform Enum.vi" Type="VI" URL="../Queue Management/Transform Enum.vi"/>
 	</Item>
