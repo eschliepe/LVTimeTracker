@@ -67,8 +67,17 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Controls" Type="Folder">
+			<Item Name="Add Button.ctl" Type="VI" URL="../Controls/Add Button.ctl"/>
+			<Item Name="Edit Button.ctl" Type="VI" URL="../Controls/Edit Button.ctl"/>
+			<Item Name="Start Button.ctl" Type="VI" URL="../Controls/Start Button.ctl"/>
+			<Item Name="Stop Button.ctl" Type="VI" URL="../Controls/Stop Button.ctl"/>
+		</Item>
 		<Item Name="External Messages" Type="Folder">
 			<Item Name="External_Messages.lvclass" Type="LVClass" URL="../External_Messages/External_Messages.lvclass"/>
+		</Item>
+		<Item Name="Projects" Type="Folder">
+			<Item Name="Projects.lvclass" Type="LVClass" URL="../Projects/Parent/Projects.lvclass"/>
 		</Item>
 		<Item Name="Task Management" Type="Folder">
 			<Item Name="Task_Management.lvclass" Type="LVClass" URL="../Task_Management/Task_Management.lvclass"/>
