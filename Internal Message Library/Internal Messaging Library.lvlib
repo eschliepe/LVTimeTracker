@@ -44,12 +44,17 @@
 		<Item Name="Process Name.vi" Type="VI" URL="../Queue Management/Process Name.vi"/>
 		<Item Name="Transform Enum.vi" Type="VI" URL="../Queue Management/Transform Enum.vi"/>
 	</Item>
+	<Item Name="Queue-Add Project.vi" Type="VI" URL="../Queue-Add Project.vi"/>
 	<Item Name="Queue-Add Time Entry.vi" Type="VI" URL="../Queue-Add Time Entry.vi"/>
 	<Item Name="Queue-Delete Time Entry.vi" Type="VI" URL="../Queue-Delete Time Entry.vi"/>
+	<Item Name="Queue-Edit Project.vi" Type="VI" URL="../Queue-Edit Project.vi"/>
 	<Item Name="Queue-Error.vi" Type="VI" URL="../Queue-Error.vi"/>
 	<Item Name="Queue-Exit.vi" Type="VI" URL="../Queue-Exit.vi"/>
 	<Item Name="Queue-Initialize.vi" Type="VI" URL="../Queue-Initialize.vi"/>
 	<Item Name="Queue-Load Data.vi" Type="VI" URL="../Queue-Load Data.vi"/>
 	<Item Name="Queue-Modify Time Entry.vi" Type="VI" URL="../Queue-Modify Time Entry.vi"/>
+	<Item Name="Queue-Save Project(s).vi" Type="VI" URL="../Queue-Save Project(s).vi"/>
+	<Item Name="Queue-Update Project List.vi" Type="VI" URL="../Queue-Update Project List.vi"/>
+	<Item Name="Queue-Update Task List.vi" Type="VI" URL="../Queue-Update Task List.vi"/>
 	<Item Name="Queue_Template.vit" Type="VI" URL="../Queue_Template.vit"/>
 </Library>
