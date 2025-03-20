@@ -11,4 +11,5 @@
 	</Item>
 	<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
 	<Item Name="MainMenu.rtm" Type="Document" URL="../MainMenu.rtm"/>
+	<Item Name="New Project.vi" Type="VI" URL="../Additional UIs/New Project.vi"/>
 </Library>
