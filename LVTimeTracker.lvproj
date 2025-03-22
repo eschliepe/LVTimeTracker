@@ -83,6 +83,9 @@
 		<Item Name="Task Management" Type="Folder">
 			<Item Name="Task_Management.lvclass" Type="LVClass" URL="../Task_Management/Task_Management.lvclass"/>
 		</Item>
+		<Item Name="Time Entries" Type="Folder">
+			<Item Name="Time Entries.lvclass" Type="LVClass" URL="../Time Entries/Time Entries.lvclass"/>
+		</Item>
 		<Item Name="Main_Process.lvlib" Type="Library" URL="../Main_Process.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
