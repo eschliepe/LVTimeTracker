@@ -48,6 +48,7 @@
 	<Item Name="Queue-Add Time Entry.vi" Type="VI" URL="../Queue-Add Time Entry.vi"/>
 	<Item Name="Queue-Delete Time Entry.vi" Type="VI" URL="../Queue-Delete Time Entry.vi"/>
 	<Item Name="Queue-Edit Project.vi" Type="VI" URL="../Queue-Edit Project.vi"/>
+	<Item Name="Queue-End Time Entry.vi" Type="VI" URL="../Queue-End Time Entry.vi"/>
 	<Item Name="Queue-Error.vi" Type="VI" URL="../Queue-Error.vi"/>
 	<Item Name="Queue-Exit.vi" Type="VI" URL="../Queue-Exit.vi"/>
 	<Item Name="Queue-Initialize.vi" Type="VI" URL="../Queue-Initialize.vi"/>
