@@ -1,0 +1,24 @@
+I wanted to make sure I had these at home so I can add them as requirements/features in the open source project I'm working on.
+
+Requirements for a new time tracking software.
+
+Ability to hide projects that are no longer being used.
+Ability to hide tasks in projects that are no longer being used.
+Ability to sort projects and tasks in forward or reverse alphabet.
+Assign projects and tasks priority numbers that can be used to sort by as well, or allow for dragging tasks and projects to places where you want them.
+Even allow for sub tasks that can get appended to the front of the details when exporting or sending to a 3rd party like Zoho.
+Start and Stop timing - can pop up a dialog box to ask about what it is and allow selections from drop downs, can edit in the list without having to double click to edit a line.
+Ability to add additional columns/items so you can add more information to a line for specific tasks.
+A quick selection list for big ticket items and a chance keep track of hours on specific portions of specific projects.
+Save information locally to computer as well as backup to database (etc).
+
+Allow for combing the hours from a day for all of a task to roll up into a single number for reporting to a timesheet.  This would also concatenate the descriptions for easy copy and paste, they might even paste when the rollup is clicked.
+
+Create a report that concatenates the different entries for a particular project/task into a single text box.
+Add a button next to the text box reports that copies the text to the clipboard.
+Would love to connect it to Jira so that we can select from a list of Jira tasks that are being worked on.
+
+Ability to carve out time in the middle of a currently running task to assign to another piece, so it would stop the current task, reassign some of the time to another task and then restart the original task.
+Add the option for the user to require that some text is entered when starting a task.
+Add ability for the user to specify in a LabVIEW project what project it is and use a shortcut to start the timer for that project and maybe even interact with GIT to retrieve the information necessary to gather commits and collect those as entries in the list.
+Add ability to "split" at a timestame (I think I may have already covered this but thought of it last night and wanted to make sure to capture it) and roll things out.
