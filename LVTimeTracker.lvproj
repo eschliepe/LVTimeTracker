@@ -71,6 +71,7 @@
 		<Item Name="Controls" Type="Folder">
 			<Item Name="Add Button.ctl" Type="VI" URL="../Controls/Add Button.ctl"/>
 			<Item Name="Edit Button.ctl" Type="VI" URL="../Controls/Edit Button.ctl"/>
+			<Item Name="Main-DataGrid.ctl" Type="VI" URL="../Controls/Main-DataGrid.ctl"/>
 			<Item Name="Start Button.ctl" Type="VI" URL="../Controls/Start Button.ctl"/>
 			<Item Name="Stop Button.ctl" Type="VI" URL="../Controls/Stop Button.ctl"/>
 		</Item>
@@ -88,6 +89,10 @@
 			<Item Name="Time Entries.lvclass" Type="LVClass" URL="../Time Entries/Time Entry/Time Entries.lvclass"/>
 			<Item Name="Time Entry-INI.lvclass" Type="LVClass" URL="../Time Entries/Time Entry-INI/Time Entry-INI.lvclass"/>
 		</Item>
+		<Item Name="Utilities" Type="Folder">
+			<Item Name="Time Management.lvlib" Type="Library" URL="../Utilities/Time Management/Time Management.lvlib"/>
+		</Item>
+		<Item Name="ENUM-Inc_Dec.ctl" Type="VI" URL="../Utilities/Time Management/ENUM-Inc_Dec.ctl"/>
 		<Item Name="Main_Process.lvlib" Type="Library" URL="../Main_Process.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -97,6 +102,7 @@
 				<Item Name="Create NI GUID.vi" Type="VI" URL="/&lt;vilib&gt;/string/Create NI GUID.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Get System Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/Get System Directory.vi"/>
+				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
 				<Item Name="LVRowAndColumnUnsignedTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnUnsignedTypeDef.ctl"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>

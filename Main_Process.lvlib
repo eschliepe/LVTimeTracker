@@ -10,6 +10,7 @@
 		<Item Name="Internal Messaging Library.lvlib" Type="Library" URL="../Internal Message Library/Internal Messaging Library.lvlib"/>
 	</Item>
 	<Item Name="UIs" Type="Folder">
+		<Item Name="Edit Time Entry.vi" Type="VI" URL="../Additional UIs/Edit Time Entry.vi"/>
 		<Item Name="New Project.vi" Type="VI" URL="../Additional UIs/New Project.vi"/>
 	</Item>
 	<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
