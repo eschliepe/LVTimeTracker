@@ -71,6 +71,7 @@
 		<Item Name="Controls" Type="Folder">
 			<Item Name="Add Button.ctl" Type="VI" URL="../Controls/Add Button.ctl"/>
 			<Item Name="Edit Button.ctl" Type="VI" URL="../Controls/Edit Button.ctl"/>
+			<Item Name="ENUM-Inc_Dec.ctl" Type="VI" URL="../Utilities/Time Management/ENUM-Inc_Dec.ctl"/>
 			<Item Name="Main-DataGrid.ctl" Type="VI" URL="../Controls/Main-DataGrid.ctl"/>
 			<Item Name="Start Button.ctl" Type="VI" URL="../Controls/Start Button.ctl"/>
 			<Item Name="Stop Button.ctl" Type="VI" URL="../Controls/Stop Button.ctl"/>
@@ -92,7 +93,6 @@
 		<Item Name="Utilities" Type="Folder">
 			<Item Name="Time Management.lvlib" Type="Library" URL="../Utilities/Time Management/Time Management.lvlib"/>
 		</Item>
-		<Item Name="ENUM-Inc_Dec.ctl" Type="VI" URL="../Utilities/Time Management/ENUM-Inc_Dec.ctl"/>
 		<Item Name="Main_Process.lvlib" Type="Library" URL="../Main_Process.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">

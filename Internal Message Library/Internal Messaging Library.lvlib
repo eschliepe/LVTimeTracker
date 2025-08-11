@@ -57,5 +57,6 @@
 	<Item Name="Queue-Save Project(s).vi" Type="VI" URL="../Queue-Save Project(s).vi"/>
 	<Item Name="Queue-Update Project List.vi" Type="VI" URL="../Queue-Update Project List.vi"/>
 	<Item Name="Queue-Update Task List.vi" Type="VI" URL="../Queue-Update Task List.vi"/>
+	<Item Name="Queue-Update Time Entry.vi" Type="VI" URL="../Queue-Update Time Entry.vi"/>
 	<Item Name="Queue_Template.vit" Type="VI" URL="../Queue_Template.vit"/>
 </Library>
