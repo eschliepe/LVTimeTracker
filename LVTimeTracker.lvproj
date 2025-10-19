@@ -73,8 +73,10 @@
 			<Item Name="Edit Button.ctl" Type="VI" URL="../Controls/Edit Button.ctl"/>
 			<Item Name="ENUM-Inc_Dec.ctl" Type="VI" URL="../Utilities/Time Management/ENUM-Inc_Dec.ctl"/>
 			<Item Name="Main-DataGrid.ctl" Type="VI" URL="../Controls/Main-DataGrid.ctl"/>
+			<Item Name="Project Info.ctl" Type="VI" URL="../Controls/Project Info.ctl"/>
 			<Item Name="Start Button.ctl" Type="VI" URL="../Controls/Start Button.ctl"/>
 			<Item Name="Stop Button.ctl" Type="VI" URL="../Controls/Stop Button.ctl"/>
+			<Item Name="Task Info.ctl" Type="VI" URL="../Controls/Task Info.ctl"/>
 		</Item>
 		<Item Name="External Messages" Type="Folder">
 			<Item Name="External_Messages.lvclass" Type="LVClass" URL="../External_Messages/External_Messages.lvclass"/>
