@@ -55,6 +55,7 @@
 	<Item Name="Queue-Load Data for Month.vi" Type="VI" URL="../Queue-Load Data for Month.vi"/>
 	<Item Name="Queue-Load Data.vi" Type="VI" URL="../Queue-Load Data.vi"/>
 	<Item Name="Queue-Modify Time Entry.vi" Type="VI" URL="../Queue-Modify Time Entry.vi"/>
+	<Item Name="Queue-Pause Time Entry Update.vi" Type="VI" URL="../Queue-Pause Time Entry Update.vi"/>
 	<Item Name="Queue-Save Project(s).vi" Type="VI" URL="../Queue-Save Project(s).vi"/>
 	<Item Name="Queue-Update Project List.vi" Type="VI" URL="../Queue-Update Project List.vi"/>
 	<Item Name="Queue-Update Task List.vi" Type="VI" URL="../Queue-Update Task List.vi"/>
