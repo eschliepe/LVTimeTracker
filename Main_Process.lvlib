@@ -5,6 +5,7 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Controls" Type="Folder">
 		<Item Name="Main Loop Data.ctl" Type="VI" URL="../Controls/Main Loop Data.ctl"/>
+		<Item Name="User Event Enum.ctl" Type="VI" URL="../Controls/User Event Enum.ctl"/>
 	</Item>
 	<Item Name="Internal Message Library" Type="Folder">
 		<Item Name="Internal Messaging Library.lvlib" Type="Library" URL="../Internal Message Library/Internal Messaging Library.lvlib"/>
