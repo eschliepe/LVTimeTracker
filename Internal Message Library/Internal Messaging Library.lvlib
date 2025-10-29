@@ -51,6 +51,8 @@
 	<Item Name="Queue-End Time Entry.vi" Type="VI" URL="../Queue-End Time Entry.vi"/>
 	<Item Name="Queue-Error.vi" Type="VI" URL="../Queue-Error.vi"/>
 	<Item Name="Queue-Exit.vi" Type="VI" URL="../Queue-Exit.vi"/>
+	<Item Name="Queue-Inactivate Project.vi" Type="VI" URL="../Queue-Inactivate Project.vi"/>
+	<Item Name="Queue-Inactivate Task.vi" Type="VI" URL="../Queue-Inactivate Task.vi"/>
 	<Item Name="Queue-Initialize.vi" Type="VI" URL="../Queue-Initialize.vi"/>
 	<Item Name="Queue-Load Data for Month.vi" Type="VI" URL="../Queue-Load Data for Month.vi"/>
 	<Item Name="Queue-Load Data.vi" Type="VI" URL="../Queue-Load Data.vi"/>
