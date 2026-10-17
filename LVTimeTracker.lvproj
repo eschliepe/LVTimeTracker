@@ -93,6 +93,10 @@
 			<Item Name="Time Entry-INI.lvclass" Type="LVClass" URL="../Time Entries/Time Entry-INI/Time Entry-INI.lvclass"/>
 		</Item>
 		<Item Name="Utilities" Type="Folder">
+			<Item Name="Error Logging" Type="Folder">
+				<Item Name="Log Error.vi" Type="VI" URL="../Utilities/Error Logging/Log Error.vi"/>
+				<Item Name="Log Queued Error.vi" Type="VI" URL="../Utilities/Error Logging/Log Queued Error.vi"/>
+			</Item>
 			<Item Name="Time Management.lvlib" Type="Library" URL="../Utilities/Time Management/Time Management.lvlib"/>
 		</Item>
 		<Item Name="Main_Process.lvlib" Type="Library" URL="../Main_Process.lvlib"/>
