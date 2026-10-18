@@ -35,8 +35,10 @@ Live user data is in `%LOCALAPPDATA%\LVTimeTracker`: v1 format, 4 projects inclu
 - [x] `Run Storage Tests.vi`: `Work Folder` now defaults to empty, which means `<temp>\LVTimeTracker Tests` (2026-10-18; regenerated, so its hand layout was lost, with Erich's OK)
 - Known deviations: private data uses typedef arrays with linear lookup (the tooling cannot author maps); INI files are read and written by our own text parser in `Storage\Support\`; the wizard accessors use NI's pane, not 7/5; the test VIs have no icons. Class controls and three array controls are not Fuse (Fuse has no equivalents).
 - [x] Commit the data layer (`0953bd3`); Erich is reviewing it in LabVIEW
-- [ ] Switch `Main.vi`, `Edit Time Entry.vi` and `New Project.vi` to the new classes; change `Main Loop Data` to hold the active entry as a `Time Entry` row and to cache each day as rows
-- [ ] Fix bug 1 (day cache) on top of that
+- [x] `UI Support\` helpers for `Main.vi` (Initialize Stores, Project/Task List, Load Day, Format Entry Row, Start/Stop Entry, Save Edited Entry, Set Task Active, Save Project) and `UI State.ctl`; `Tests\Run UI Support Tests.vi` reports 40/40 (2026-10-18). Agreed with Erich: no day cache (re-read the day instead); Erich rewires `Main.vi` himself, one frame at a time, following `Documentation/Main.vi Rewiring Guide.md`.
+- [ ] Erich: rewire `Main.vi` per the guide (add `Project Store`, `Time Entry Store`, `UI State` to `Main Loop Data` first)
+- [ ] Switch `Edit Time Entry.vi` and `New Project.vi` to rows (graft new diagrams behind their existing panels)
+- [ ] Bug 1 (day cache): closed by the rewiring, since there is no cache; confirm in the app
 - [ ] Delete the old `Projects/` and `Time Entries/` classes, and the broken `CleanUp.vi` / `INI_Init.vi`
 - [ ] Update the status columns in `Code Review.md`
 

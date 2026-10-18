@@ -1,0 +1,71 @@
+# Main.vi rewiring guide (storage v2)
+
+How to move `Main.vi` from the old `Projects/` and `Time Entries/` classes to the new storage layer, one frame at a time, with the app still running after each step. The helpers are in `UI Support\` (project folder **UI Support**); each one is tested by `Tests\Run UI Support Tests.vi`.
+
+## Step 0: add the new state to `Main Loop Data.ctl`
+
+Add three fields and **keep the old ones for now** (Bundle/Unbundle By Name keep working, so nothing breaks):
+
+| New field | Type |
+|---|---|
+| `Project Store` | `Project Store.lvclass` (drag the class from the project into the cluster) |
+| `Time Entry Store` | `Time Entry Store.lvclass` |
+| `UI State` | `UI Support\UI State.ctl` |
+
+Use the **parent** classes. `Initialize Stores.vi` puts the INI children on those wires.
+
+`UI State` holds:
+
+| Field | Replaces |
+|---|---|
+| `Active Entry` (Time Entry row; empty `ID` = nothing running) | `Time Entry.lvclass` + `Time Entry Active?` |
+| `Displayed Day` | `Displayed Day` |
+| `Project IDs`, `Task IDs` | nothing; they are parallel to the Projects/Tasks listbox items, so a selected row maps to an ID |
+| `Row Entry IDs`, `Day Entries` | `Time Entries by Day` (the cache is dropped; see bug 1) |
+
+## Frame by frame
+
+Selected IDs come from indexing the parallel arrays with the listbox `Value`: `Project IDs[Projects.Value]`, `Task IDs[Tasks.Value]`, `Row Entry IDs[TimeCard row]`.
+
+Terminals: every helper is 4-2-2-4 with error in/out at the bottom corners. A store comes in on the top middle (7) and goes out on 5; when a helper takes both stores, the second is on 6 in / 4 out. **Start Entry, Stop Entry and Save Edited Entry also take the Project Store**: Save Entry uses it to write the `Project Name`/`Task Name` labels into the month file. Rows keep the old seven columns, **ID first**: ID, Start, End, Elapsed, Project, Task, Description (same order as the old `Update Time Entry.vi`).
+
+| Frame | Take out | Put in |
+|---|---|---|
+| **Initialize, Default** | `Projects-INI:Initialize`, `Time Entry-INI:Initialize` | `Initialize Stores.vi` (Data Folder empty = `%LOCALAPPDATA%\LVTimeTracker`; creates it if missing) → bundle `Project Store`, `Time Entry Store`; put `Running Entry` into `UI State.Active Entry` when `Entry Running?` is TRUE (and fire `Mark Active` as now) |
+| **Load Data** | `Projects:Read from Data Source` | nothing (Initialize Stores already read the data); just queue Update Project List. Keep the frame for the menu's Load Projects; there, call `Project Store:Read from Data Source` |
+| **Update Project List** | the `Projects` property node, the For loop, Sort 1D Array | `Project List.vi` → `Item Names` = Project Names; store `Project IDs`. Re-select by ID: search the old selected ID in the new `Project IDs` |
+| **Update Task List** | `Projects` property node, Look In Map, the For loop | `Task List.vi` with `Project IDs[Projects.Value]` → `Item Names` = Task Names; store `Task IDs` |
+| **Load Data for Month** (rename to *Load Day* if you like) | the whole map/cache case structure | `Load Day.vi` (both stores; Day = `Displayed Day`, Now = Get Date/Time) → MCLB `Item Names` = Rows; store `Row Entry IDs`, `Day Entries`. Keep the Top Left Visible Cell write |
+| **Add Time Entry** | `Time Entry-INI:Initialize`, `Create Time Entry`, `Calculate`, `Save` | `Start Entry.vi` (both stores; Project ID, Task ID from the parallel arrays, Description, Start Time = now) → `UI State.Active Entry` = New Entry; then queue Load Data for Month. Error 5101 means nothing was selected, so show it or ignore it, but don't mark active |
+| **End Time Entry** | `Set Stop Time`, `Save Time Entry`, the Replace Array Subset on the last row | `Stop Entry.vi` (both stores; Active Entry, End Time = now) → `Active Entry` = Active Entry out; then queue Load Data for Month (redraws the day correctly, which fixes the "overwrites the last row" bug) |
+| **Update Time Entry** (timer tick) | `Calculate Time Entry`, Replace Array Subset on the last row | Only if `Active Entry.ID` is in `Row Entry IDs`: `Format Entry Row.vi` (Active Entry, Now, Project Store) → replace **that** row (index from Search 1D Array), not the last one |
+| **Modify Time Entry** | `Time Entry-INI:Initialize`, `Read Time Entry`, `Edit`, `Update`, `Calculate`, `Save` | Original = `Day Entries[index of ID in Row Entry IDs]` → Edit Time Entry dialog → `Save Edited Entry.vi` (both stores; Original, Edited); if the edited entry is the active one, update `Active Entry`; queue Load Data for Month. *(The dialog moves to rows in the dialog step; until then this frame stays on the old code.)* |
+| **Inactivate Task** | `Projects:Set Task Inactive`, the disabled `Write to Data Source` | `Set Task Active.vi` (Task ID, FALSE) — it writes to disk itself (bug 7); queue Update Task List |
+| **Add Project / Edit Project** | `Projects` bundle work after `New Project.vi` | `Save Project.vi` (Project ID empty for Add, selected ID for Edit; name; task names; an unknown ID gives error 5102) → queue Update Project List / Update Task List. *(Needs the New Project dialog step.)* |
+| **Save Project(s)** | `Projects:Write to Data Source` | `Project Store:Write to Data Source` (every helper that changes projects already writes, so this is only for the menu item) |
+| **"Set to Current Day": Mouse Up** (event loop) | — | also queue Load Data for Month (bug 3: writing the local variable fires no event) |
+| **Exit / Panel Close?** | `Queue-End Time Entry` | unchanged; End Time Entry now uses `Stop Entry.vi` |
+
+## Step last: remove the old fields
+
+When no frame reads `Task_Management.lvclass`¹, `Projects.lvclass`, `Time Entry.lvclass`, `Time Entry Active?` or `Time Entries by Day`, delete them from `Main Loop Data.ctl`. Then the `Projects/` and `Time Entries/` classes, `CleanUp.vi` and `INI_Init.vi` can be deleted (plan checklist).
+
+¹ Only if `Task_Management` is unused; it was not part of this work.
+
+## Known limits
+
+- `Get Running Entry` only looks in the current and previous UTC month, so a timer left running longer than that is not resumed at startup.
+- `Initialize Stores.vi` with an empty Data Folder (the real `%LOCALAPPDATA%` folder) has no automated test; the tests always pass a copy.
+
+## Bugs this closes
+
+| Code Review item | How |
+|---|---|
+| 1 (stale day list) | no cache; every redraw re-reads the day |
+| 1-related (last row overwritten) | Update/End Time Entry touch only the active entry's row, found by ID |
+| 2 (earlier month uses wrong file) | entries are read/written by their own start time |
+| 3 (Set to Current Day) | Mouse Up queues Load Data for Month |
+| 7 (inactive task not saved) | `Set Task Active.vi` writes |
+| 8 (writer never removes) | full rewrite in the new store |
+| `:60` seconds | `Format Entry Row.vi` rounds first |
+| empty project/task on Start | `Start Entry.vi` refuses with 5101 |
