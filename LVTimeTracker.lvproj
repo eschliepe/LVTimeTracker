@@ -85,6 +85,59 @@
 			<Item Name="Projects-INI.lvclass" Type="LVClass" URL="../Projects/INI_class/Projects-INI.lvclass"/>
 			<Item Name="Projects.lvclass" Type="LVClass" URL="../Projects/Parent/Projects.lvclass"/>
 		</Item>
+		<Item Name="Storage" Type="Folder">
+			<Item Name="Rows" Type="Folder">
+				<Item Name="Project List.ctl" Type="VI" URL="../Storage/Rows/Project List.ctl"/>
+				<Item Name="Project.ctl" Type="VI" URL="../Storage/Rows/Project.ctl"/>
+				<Item Name="Task List.ctl" Type="VI" URL="../Storage/Rows/Task List.ctl"/>
+				<Item Name="Task.ctl" Type="VI" URL="../Storage/Rows/Task.ctl"/>
+				<Item Name="Time Entry List.ctl" Type="VI" URL="../Storage/Rows/Time Entry List.ctl"/>
+				<Item Name="Time Entry.ctl" Type="VI" URL="../Storage/Rows/Time Entry.ctl"/>
+			</Item>
+			<Item Name="Project Store.lvclass" Type="LVClass" URL="../Storage/Project Store/Project Store.lvclass"/>
+			<Item Name="Project Store-INI.lvclass" Type="LVClass" URL="../Storage/Project Store-INI/Project Store-INI.lvclass"/>
+			<Item Name="Time Entry Store.lvclass" Type="LVClass" URL="../Storage/Time Entry Store/Time Entry Store.lvclass"/>
+			<Item Name="Time Entry Store-INI.lvclass" Type="LVClass" URL="../Storage/Time Entry Store-INI/Time Entry Store-INI.lvclass"/>
+			<Item Name="Support" Type="Folder">
+				<Item Name="Escape INI String.vi" Type="VI" URL="../Storage/Support/Escape INI String.vi"/>
+				<Item Name="Find Running Entry.vi" Type="VI" URL="../Storage/Support/Find Running Entry.vi"/>
+				<Item Name="Month File Name.vi" Type="VI" URL="../Storage/Support/Month File Name.vi"/>
+				<Item Name="Parse INI File.vi" Type="VI" URL="../Storage/Support/Parse INI File.vi"/>
+				<Item Name="Read Day Entries.vi" Type="VI" URL="../Storage/Support/Read Day Entries.vi"/>
+				<Item Name="Read INI Table.vi" Type="VI" URL="../Storage/Support/Read INI Table.vi"/>
+				<Item Name="Read Time Entry File.vi" Type="VI" URL="../Storage/Support/Read Time Entry File.vi"/>
+				<Item Name="Sort Indices by Key.vi" Type="VI" URL="../Storage/Support/Sort Indices by Key.vi"/>
+				<Item Name="Unescape INI String.vi" Type="VI" URL="../Storage/Support/Unescape INI String.vi"/>
+				<Item Name="Write INI Table.vi" Type="VI" URL="../Storage/Support/Write INI Table.vi"/>
+				<Item Name="Write Time Entry File.vi" Type="VI" URL="../Storage/Support/Write Time Entry File.vi"/>
+			</Item>
+			<Item Name="Migration" Type="Folder">
+				<Item Name="Migrate - Backup INI Files.vi" Type="VI" URL="../Storage/Migration/Migrate - Backup INI Files.vi"/>
+				<Item Name="Migrate - Needs Migration.vi" Type="VI" URL="../Storage/Migration/Migrate - Needs Migration.vi"/>
+				<Item Name="Migrate - Read v1 Entries.vi" Type="VI" URL="../Storage/Migration/Migrate - Read v1 Entries.vi"/>
+				<Item Name="Migrate - Read v1 Projects.vi" Type="VI" URL="../Storage/Migration/Migrate - Read v1 Projects.vi"/>
+				<Item Name="Migrate - Resolve Entries.vi" Type="VI" URL="../Storage/Migration/Migrate - Resolve Entries.vi"/>
+				<Item Name="Migrate v1 Data.vi" Type="VI" URL="../Storage/Migration/Migrate v1 Data.vi"/>
+			</Item>
+		</Item>
+		<Item Name="Tests" Type="Folder">
+			<Item Name="Run Storage Tests.vi" Type="VI" URL="../Tests/Run Storage Tests.vi"/>
+			<Item Name="Storage" Type="Folder">
+				<Item Name="Test ISO 8601 Round Trip.vi" Type="VI" URL="../Tests/Storage/Test ISO 8601 Round Trip.vi"/>
+				<Item Name="Test Migrate v1 Data.vi" Type="VI" URL="../Tests/Storage/Test Migrate v1 Data.vi"/>
+				<Item Name="Test Project Store INI Round Trip.vi" Type="VI" URL="../Tests/Storage/Test Project Store INI Round Trip.vi"/>
+				<Item Name="Test Remove Project.vi" Type="VI" URL="../Tests/Storage/Test Remove Project.vi"/>
+				<Item Name="Test Running Entry.vi" Type="VI" URL="../Tests/Storage/Test Running Entry.vi"/>
+				<Item Name="Test Time Entry Month Files.vi" Type="VI" URL="../Tests/Storage/Test Time Entry Month Files.vi"/>
+			</Item>
+			<Item Name="Support" Type="Folder">
+				<Item Name="Test - Check.vi" Type="VI" URL="../Tests/Support/Test - Check.vi"/>
+				<Item Name="Test - Finish.vi" Type="VI" URL="../Tests/Support/Test - Finish.vi"/>
+				<Item Name="Test - Prepare Case Folder.vi" Type="VI" URL="../Tests/Support/Test - Prepare Case Folder.vi"/>
+				<Item Name="Test - Read Text Without CR.vi" Type="VI" URL="../Tests/Support/Test - Read Text Without CR.vi"/>
+				<Item Name="Test - Text Contains.vi" Type="VI" URL="../Tests/Support/Test - Text Contains.vi"/>
+			</Item>
+		</Item>
 		<Item Name="Task Management" Type="Folder">
 			<Item Name="Task_Management.lvclass" Type="LVClass" URL="../Task_Management/Task_Management.lvclass"/>
 		</Item>
