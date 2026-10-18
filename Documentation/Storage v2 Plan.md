@@ -34,7 +34,7 @@ Live user data is in `%LOCALAPPDATA%\LVTimeTracker`: v1 format, 4 projects inclu
 - [x] Migration run on the live folder 2026-10-17. Backup is in `Backup v1 2026-10-17 212116\`. The 4 projects include `Default` as an inactive project, because a v1 entry in 2025-08 used it.
 - [ ] Before committing: the `Work Folder` default in `Run Storage Tests.vi` points at a session scratch folder and needs changing (for example, to an empty path that falls back to the system temp folder)
 - Known deviations: private data uses typedef arrays with linear lookup (the tooling cannot author maps); INI files are read and written by our own text parser in `Storage\Support\`; the wizard accessors use NI's pane, not 7/5; the test VIs have no icons. Class controls and three array controls are not Fuse (Fuse has no equivalents).
-- [ ] Commit the data layer, then review with Erich
+- [x] Commit the data layer (`0953bd3`); Erich is reviewing it in LabVIEW
 - [ ] Switch `Main.vi`, `Edit Time Entry.vi` and `New Project.vi` to the new classes; change `Main Loop Data` to hold the active entry as a `Time Entry` row and to cache each day as rows
 - [ ] Fix bug 1 (day cache) on top of that
 - [ ] Delete the old `Projects/` and `Time Entries/` classes, and the broken `CleanUp.vi` / `INI_Init.vi`

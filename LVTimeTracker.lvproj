@@ -1,7 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="24008000">
+<Project Type="Project" LVVersion="26008000">
 	<Property Name="CCSymbols" Type="Str"></Property>
-	<Property Name="NI.LV.All.SaveVersion" Type="Str">24.0</Property>
+	<Property Name="NI.LV.All.SaveVersion" Type="Str">26.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Property Name="TopVI" Type="Xml">..\Main.vi</Property>
@@ -86,6 +86,14 @@
 			<Item Name="Projects.lvclass" Type="LVClass" URL="../Projects/Parent/Projects.lvclass"/>
 		</Item>
 		<Item Name="Storage" Type="Folder">
+			<Item Name="Migration" Type="Folder">
+				<Item Name="Migrate - Backup INI Files.vi" Type="VI" URL="../Storage/Migration/Migrate - Backup INI Files.vi"/>
+				<Item Name="Migrate - Needs Migration.vi" Type="VI" URL="../Storage/Migration/Migrate - Needs Migration.vi"/>
+				<Item Name="Migrate - Read v1 Entries.vi" Type="VI" URL="../Storage/Migration/Migrate - Read v1 Entries.vi"/>
+				<Item Name="Migrate - Read v1 Projects.vi" Type="VI" URL="../Storage/Migration/Migrate - Read v1 Projects.vi"/>
+				<Item Name="Migrate - Resolve Entries.vi" Type="VI" URL="../Storage/Migration/Migrate - Resolve Entries.vi"/>
+				<Item Name="Migrate v1 Data.vi" Type="VI" URL="../Storage/Migration/Migrate v1 Data.vi"/>
+			</Item>
 			<Item Name="Rows" Type="Folder">
 				<Item Name="Project List.ctl" Type="VI" URL="../Storage/Rows/Project List.ctl"/>
 				<Item Name="Project.ctl" Type="VI" URL="../Storage/Rows/Project.ctl"/>
@@ -94,10 +102,6 @@
 				<Item Name="Time Entry List.ctl" Type="VI" URL="../Storage/Rows/Time Entry List.ctl"/>
 				<Item Name="Time Entry.ctl" Type="VI" URL="../Storage/Rows/Time Entry.ctl"/>
 			</Item>
-			<Item Name="Project Store.lvclass" Type="LVClass" URL="../Storage/Project Store/Project Store.lvclass"/>
-			<Item Name="Project Store-INI.lvclass" Type="LVClass" URL="../Storage/Project Store-INI/Project Store-INI.lvclass"/>
-			<Item Name="Time Entry Store.lvclass" Type="LVClass" URL="../Storage/Time Entry Store/Time Entry Store.lvclass"/>
-			<Item Name="Time Entry Store-INI.lvclass" Type="LVClass" URL="../Storage/Time Entry Store-INI/Time Entry Store-INI.lvclass"/>
 			<Item Name="Support" Type="Folder">
 				<Item Name="Escape INI String.vi" Type="VI" URL="../Storage/Support/Escape INI String.vi"/>
 				<Item Name="Find Running Entry.vi" Type="VI" URL="../Storage/Support/Find Running Entry.vi"/>
@@ -111,17 +115,15 @@
 				<Item Name="Write INI Table.vi" Type="VI" URL="../Storage/Support/Write INI Table.vi"/>
 				<Item Name="Write Time Entry File.vi" Type="VI" URL="../Storage/Support/Write Time Entry File.vi"/>
 			</Item>
-			<Item Name="Migration" Type="Folder">
-				<Item Name="Migrate - Backup INI Files.vi" Type="VI" URL="../Storage/Migration/Migrate - Backup INI Files.vi"/>
-				<Item Name="Migrate - Needs Migration.vi" Type="VI" URL="../Storage/Migration/Migrate - Needs Migration.vi"/>
-				<Item Name="Migrate - Read v1 Entries.vi" Type="VI" URL="../Storage/Migration/Migrate - Read v1 Entries.vi"/>
-				<Item Name="Migrate - Read v1 Projects.vi" Type="VI" URL="../Storage/Migration/Migrate - Read v1 Projects.vi"/>
-				<Item Name="Migrate - Resolve Entries.vi" Type="VI" URL="../Storage/Migration/Migrate - Resolve Entries.vi"/>
-				<Item Name="Migrate v1 Data.vi" Type="VI" URL="../Storage/Migration/Migrate v1 Data.vi"/>
-			</Item>
+			<Item Name="Project Store-INI.lvclass" Type="LVClass" URL="../Storage/Project Store-INI/Project Store-INI.lvclass"/>
+			<Item Name="Project Store.lvclass" Type="LVClass" URL="../Storage/Project Store/Project Store.lvclass"/>
+			<Item Name="Time Entry Store-INI.lvclass" Type="LVClass" URL="../Storage/Time Entry Store-INI/Time Entry Store-INI.lvclass"/>
+			<Item Name="Time Entry Store.lvclass" Type="LVClass" URL="../Storage/Time Entry Store/Time Entry Store.lvclass"/>
+		</Item>
+		<Item Name="Task Management" Type="Folder">
+			<Item Name="Task_Management.lvclass" Type="LVClass" URL="../Task_Management/Task_Management.lvclass"/>
 		</Item>
 		<Item Name="Tests" Type="Folder">
-			<Item Name="Run Storage Tests.vi" Type="VI" URL="../Tests/Run Storage Tests.vi"/>
 			<Item Name="Storage" Type="Folder">
 				<Item Name="Test ISO 8601 Round Trip.vi" Type="VI" URL="../Tests/Storage/Test ISO 8601 Round Trip.vi"/>
 				<Item Name="Test Migrate v1 Data.vi" Type="VI" URL="../Tests/Storage/Test Migrate v1 Data.vi"/>
@@ -137,9 +139,7 @@
 				<Item Name="Test - Read Text Without CR.vi" Type="VI" URL="../Tests/Support/Test - Read Text Without CR.vi"/>
 				<Item Name="Test - Text Contains.vi" Type="VI" URL="../Tests/Support/Test - Text Contains.vi"/>
 			</Item>
-		</Item>
-		<Item Name="Task Management" Type="Folder">
-			<Item Name="Task_Management.lvclass" Type="LVClass" URL="../Task_Management/Task_Management.lvclass"/>
+			<Item Name="Run Storage Tests.vi" Type="VI" URL="../Tests/Run Storage Tests.vi"/>
 		</Item>
 		<Item Name="Time Entries" Type="Folder">
 			<Item Name="Time Entries.lvclass" Type="LVClass" URL="../Time Entries/Time Entry/Time Entries.lvclass"/>
