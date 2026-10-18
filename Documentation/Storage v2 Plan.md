@@ -30,9 +30,9 @@ Live user data is in `%LOCALAPPDATA%\LVTimeTracker`: v1 format, 4 projects inclu
 
 - [x] Read the code review, create the branch, agree on the decisions
 - [x] Data layer: typedefs, classes, time helpers, migration (all built 2026-10-17)
-- [x] Tests passing: `Tests\Run Storage Tests.vi` reports 35/35. **These are plain-LabVIEW tests, not Caraya, because Caraya is not installed in LabVIEW 2026 (32-bit).** Port them once Caraya is installed through VIPM.
+- [x] Tests passing: `Tests\Run Storage Tests.vi` reports 34/34 (the earlier "35" was a miscount; the tests hold 34 checks). **These are plain-LabVIEW tests, not Caraya, because Caraya is not installed in LabVIEW 2026 (32-bit).** Port them once Caraya is installed through VIPM.
 - [x] Migration run on the live folder 2026-10-17. Backup is in `Backup v1 2026-10-17 212116\`. The 4 projects include `Default` as an inactive project, because a v1 entry in 2025-08 used it.
-- [ ] Before committing: the `Work Folder` default in `Run Storage Tests.vi` points at a session scratch folder and needs changing (for example, to an empty path that falls back to the system temp folder)
+- [x] `Run Storage Tests.vi`: `Work Folder` now defaults to empty, which means `<temp>\LVTimeTracker Tests` (2026-10-18; regenerated, so its hand layout was lost, with Erich's OK)
 - Known deviations: private data uses typedef arrays with linear lookup (the tooling cannot author maps); INI files are read and written by our own text parser in `Storage\Support\`; the wizard accessors use NI's pane, not 7/5; the test VIs have no icons. Class controls and three array controls are not Fuse (Fuse has no equivalents).
 - [x] Commit the data layer (`0953bd3`); Erich is reviewing it in LabVIEW
 - [ ] Switch `Main.vi`, `Edit Time Entry.vi` and `New Project.vi` to the new classes; change `Main Loop Data` to hold the active entry as a `Time Entry` row and to cache each day as rows
