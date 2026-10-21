@@ -176,6 +176,8 @@
 			<Item Name="Save Edited Entry.vi" Type="VI" URL="../UI Support/Save Edited Entry.vi"/>
 			<Item Name="Set Task Active.vi" Type="VI" URL="../UI Support/Set Task Active.vi"/>
 			<Item Name="Save Project.vi" Type="VI" URL="../UI Support/Save Project.vi"/>
+			<Item Name="Edit Entry Dialog.vi" Type="VI" URL="../UI Support/Edit Entry Dialog.vi"/>
+			<Item Name="Modify Entry.vi" Type="VI" URL="../UI Support/Modify Entry.vi"/>
 			<Item Name="UI State.ctl" Type="VI" URL="../UI Support/UI State.ctl"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies"/>
