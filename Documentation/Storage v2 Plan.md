@@ -37,6 +37,10 @@ Live user data is in `%LOCALAPPDATA%\LVTimeTracker`: v1 format, 4 projects inclu
 - [x] Commit the data layer (`0953bd3`); Erich is reviewing it in LabVIEW
 - [x] `UI Support\` helpers for `Main.vi` (Initialize Stores, Project/Task List, Load Day, Format Entry Row, Start/Stop Entry, Save Edited Entry, Set Task Active, Save Project) and `UI State.ctl`; `Tests\Run UI Support Tests.vi` reports 40/40 (2026-10-18). Agreed with Erich: no day cache (re-read the day instead); Erich rewires `Main.vi` himself, one frame at a time, following `Documentation/Main.vi Rewiring Guide.md`.
 - [ ] Erich: rewire `Main.vi` per the guide (add `Project Store`, `Time Entry Store`, `UI State` to `Main Loop Data` first)
+  - Done (checked 2026-10-22, `Main.vi` executable): Initialize, Update Project/Task List, Add/End/Update Time Entry, **Modify Time Entry** (body of `Modify Entry.vi` inlined, then queues Load Data for Month when Updated?), **Inactivate Task** (`Set Task Active.vi`).
+  - Open: **Load Data for Month** still has the old cache around `Load Day.vi`. `Load Day.vi` only runs when `Time Entries by Day` already holds the day, and the For loop after the case then overwrites `Item Names` from the cache. Remove the Look In Map case structure, the second Look In Map, the For loop and the second Property Node, and write `Top Left Visible Cell` in the same Property Node that writes the rows.
+  - Not started: Load Data (Load Projects menu), Add/Edit Project, Save Project(s), Set to Current Day (bug 3), removing the old `Main Loop Data` fields.
+  - `UI Support\Modify Entry.vi` no longer has a caller since the inlining. Keep it until the real Edit Entry dialog exists, or delete it.
 - [ ] Switch `Edit Time Entry.vi` and `New Project.vi` to rows (graft new diagrams behind their existing panels)
 - [ ] Bug 1 (day cache): closed by the rewiring, since there is no cache; confirm in the app
 - [ ] Delete the old `Projects/` and `Time Entries/` classes, and the broken `CleanUp.vi` / `INI_Init.vi`
