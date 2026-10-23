@@ -133,13 +133,13 @@
 				<Item Name="Test Time Entry Month Files.vi" Type="VI" URL="../Tests/Storage/Test Time Entry Month Files.vi"/>
 			</Item>
 			<Item Name="Support" Type="Folder">
+				<Item Name="Test - Check All.vi" Type="VI" URL="../Tests/Support/Test - Check All.vi"/>
 				<Item Name="Test - Check.vi" Type="VI" URL="../Tests/Support/Test - Check.vi"/>
 				<Item Name="Test - Finish.vi" Type="VI" URL="../Tests/Support/Test - Finish.vi"/>
 				<Item Name="Test - Prepare Case Folder.vi" Type="VI" URL="../Tests/Support/Test - Prepare Case Folder.vi"/>
 				<Item Name="Test - Read Text Without CR.vi" Type="VI" URL="../Tests/Support/Test - Read Text Without CR.vi"/>
-				<Item Name="Test - Text Contains.vi" Type="VI" URL="../Tests/Support/Test - Text Contains.vi"/>
-				<Item Name="Test - Check All.vi" Type="VI" URL="../Tests/Support/Test - Check All.vi"/>
 				<Item Name="Test - String Arrays Equal.vi" Type="VI" URL="../Tests/Support/Test - String Arrays Equal.vi"/>
+				<Item Name="Test - Text Contains.vi" Type="VI" URL="../Tests/Support/Test - Text Contains.vi"/>
 			</Item>
 			<Item Name="UI Support" Type="Folder">
 				<Item Name="Test Format Entry Row.vi" Type="VI" URL="../Tests/UI Support/Test Format Entry Row.vi"/>
@@ -157,6 +157,22 @@
 			<Item Name="Time Entries.lvclass" Type="LVClass" URL="../Time Entries/Time Entry/Time Entries.lvclass"/>
 			<Item Name="Time Entry-INI.lvclass" Type="LVClass" URL="../Time Entries/Time Entry-INI/Time Entry-INI.lvclass"/>
 		</Item>
+		<Item Name="UI Support" Type="Folder">
+			<Item Name="Edit Entry Dialog.vi" Type="VI" URL="../UI Support/Edit Entry Dialog.vi"/>
+			<Item Name="Format Entry Row.vi" Type="VI" URL="../UI Support/Format Entry Row.vi"/>
+			<Item Name="Initialize Stores.vi" Type="VI" URL="../UI Support/Initialize Stores.vi"/>
+			<Item Name="Load Day.vi" Type="VI" URL="../UI Support/Load Day.vi"/>
+			<Item Name="Modify Entry.vi" Type="VI" URL="../UI Support/Modify Entry.vi"/>
+			<Item Name="Project List.vi" Type="VI" URL="../UI Support/Project List.vi"/>
+			<Item Name="Read Default Tasks.vi" Type="VI" URL="../UI Support/Read Default Tasks.vi"/>
+			<Item Name="Save Edited Entry.vi" Type="VI" URL="../UI Support/Save Edited Entry.vi"/>
+			<Item Name="Save Project.vi" Type="VI" URL="../UI Support/Save Project.vi"/>
+			<Item Name="Set Task Active.vi" Type="VI" URL="../UI Support/Set Task Active.vi"/>
+			<Item Name="Start Entry.vi" Type="VI" URL="../UI Support/Start Entry.vi"/>
+			<Item Name="Stop Entry.vi" Type="VI" URL="../UI Support/Stop Entry.vi"/>
+			<Item Name="Task List.vi" Type="VI" URL="../UI Support/Task List.vi"/>
+			<Item Name="UI State.ctl" Type="VI" URL="../UI Support/UI State.ctl"/>
+		</Item>
 		<Item Name="Utilities" Type="Folder">
 			<Item Name="Error Logging" Type="Folder">
 				<Item Name="Log Error.vi" Type="VI" URL="../Utilities/Error Logging/Log Error.vi"/>
@@ -165,21 +181,6 @@
 			<Item Name="Time Management.lvlib" Type="Library" URL="../Utilities/Time Management/Time Management.lvlib"/>
 		</Item>
 		<Item Name="Main_Process.lvlib" Type="Library" URL="../Main_Process.lvlib"/>
-		<Item Name="UI Support" Type="Folder">
-			<Item Name="Initialize Stores.vi" Type="VI" URL="../UI Support/Initialize Stores.vi"/>
-			<Item Name="Project List.vi" Type="VI" URL="../UI Support/Project List.vi"/>
-			<Item Name="Task List.vi" Type="VI" URL="../UI Support/Task List.vi"/>
-			<Item Name="Format Entry Row.vi" Type="VI" URL="../UI Support/Format Entry Row.vi"/>
-			<Item Name="Load Day.vi" Type="VI" URL="../UI Support/Load Day.vi"/>
-			<Item Name="Start Entry.vi" Type="VI" URL="../UI Support/Start Entry.vi"/>
-			<Item Name="Stop Entry.vi" Type="VI" URL="../UI Support/Stop Entry.vi"/>
-			<Item Name="Save Edited Entry.vi" Type="VI" URL="../UI Support/Save Edited Entry.vi"/>
-			<Item Name="Set Task Active.vi" Type="VI" URL="../UI Support/Set Task Active.vi"/>
-			<Item Name="Save Project.vi" Type="VI" URL="../UI Support/Save Project.vi"/>
-			<Item Name="Edit Entry Dialog.vi" Type="VI" URL="../UI Support/Edit Entry Dialog.vi"/>
-			<Item Name="Modify Entry.vi" Type="VI" URL="../UI Support/Modify Entry.vi"/>
-			<Item Name="UI State.ctl" Type="VI" URL="../UI Support/UI State.ctl"/>
-		</Item>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
