@@ -81,10 +81,6 @@
 		<Item Name="External Messages" Type="Folder">
 			<Item Name="External_Messages.lvclass" Type="LVClass" URL="../External_Messages/External_Messages.lvclass"/>
 		</Item>
-		<Item Name="Projects" Type="Folder">
-			<Item Name="Projects-INI.lvclass" Type="LVClass" URL="../Projects/INI_class/Projects-INI.lvclass"/>
-			<Item Name="Projects.lvclass" Type="LVClass" URL="../Projects/Parent/Projects.lvclass"/>
-		</Item>
 		<Item Name="Storage" Type="Folder">
 			<Item Name="Migration" Type="Folder">
 				<Item Name="Migrate - Backup INI Files.vi" Type="VI" URL="../Storage/Migration/Migrate - Backup INI Files.vi"/>
@@ -120,9 +116,6 @@
 			<Item Name="Time Entry Store-INI.lvclass" Type="LVClass" URL="../Storage/Time Entry Store-INI/Time Entry Store-INI.lvclass"/>
 			<Item Name="Time Entry Store.lvclass" Type="LVClass" URL="../Storage/Time Entry Store/Time Entry Store.lvclass"/>
 		</Item>
-		<Item Name="Task Management" Type="Folder">
-			<Item Name="Task_Management.lvclass" Type="LVClass" URL="../Task_Management/Task_Management.lvclass"/>
-		</Item>
 		<Item Name="Tests" Type="Folder">
 			<Item Name="Storage" Type="Folder">
 				<Item Name="Test ISO 8601 Round Trip.vi" Type="VI" URL="../Tests/Storage/Test ISO 8601 Round Trip.vi"/>
@@ -152,10 +145,6 @@
 			</Item>
 			<Item Name="Run Storage Tests.vi" Type="VI" URL="../Tests/Run Storage Tests.vi"/>
 			<Item Name="Run UI Support Tests.vi" Type="VI" URL="../Tests/Run UI Support Tests.vi"/>
-		</Item>
-		<Item Name="Time Entries" Type="Folder">
-			<Item Name="Time Entries.lvclass" Type="LVClass" URL="../Time Entries/Time Entry/Time Entries.lvclass"/>
-			<Item Name="Time Entry-INI.lvclass" Type="LVClass" URL="../Time Entries/Time Entry-INI/Time Entry-INI.lvclass"/>
 		</Item>
 		<Item Name="UI Support" Type="Folder">
 			<Item Name="Edit Entry Dialog.vi" Type="VI" URL="../UI Support/Edit Entry Dialog.vi"/>
