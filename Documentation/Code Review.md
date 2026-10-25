@@ -8,7 +8,7 @@ Status column: **Open**, **Partly done** or **Done** (with the branch or commit 
 
 | VI | Status | Notes |
 |---|---|---|
-| `Projects/INI_class/CleanUp.vi`, `Projects/INI_class/INI_Init.vi` | Open | Broken. They belong to an `INI.lvclass` that no longer exists and nothing calls them. Safe to delete. |
+| `Projects/INI_class/CleanUp.vi`, `Projects/INI_class/INI_Init.vi` | Done | Broken. They belonged to an `INI.lvclass` that no longer exists and nothing called them. Deleted with the old `Projects/` folder (2026-10-25). |
 
 Everything `Main.vi` uses is executable.
 
