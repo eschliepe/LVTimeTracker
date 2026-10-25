@@ -148,6 +148,7 @@
 		</Item>
 		<Item Name="UI Support" Type="Folder">
 			<Item Name="Edit Entry Dialog.vi" Type="VI" URL="../UI Support/Edit Entry Dialog.vi"/>
+			<Item Name="Find or Add List Item.vi" Type="VI" URL="../UI Support/Find or Add List Item.vi"/>
 			<Item Name="Format Entry Row.vi" Type="VI" URL="../UI Support/Format Entry Row.vi"/>
 			<Item Name="Initialize Stores.vi" Type="VI" URL="../UI Support/Initialize Stores.vi"/>
 			<Item Name="Load Day.vi" Type="VI" URL="../UI Support/Load Day.vi"/>
