@@ -22,3 +22,7 @@ Ability to carve out time in the middle of a currently running task to assign to
 Add the option for the user to require that some text is entered when starting a task.
 Add ability for the user to specify in a LabVIEW project what project it is and use a shortcut to start the timer for that project and maybe even interact with GIT to retrieve the information necessary to gather commits and collect those as entries in the list.
 Add ability to "split" at a timestame (I think I may have already covered this but thought of it last night and wanted to make sure to capture it) and roll things out.
+
+Add buttons to main.vi to the day selection that allow for selecting a day from a calendar reading.
+Add buttons to main.vi for going backward and forward by one month at a time.
+Add button to main.vi for going backwards or forwards to the next populated day.
