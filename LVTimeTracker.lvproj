@@ -167,6 +167,7 @@
 			<Item Name="Error Logging" Type="Folder">
 				<Item Name="Log Error.vi" Type="VI" URL="../Utilities/Error Logging/Log Error.vi"/>
 				<Item Name="Log Queued Error.vi" Type="VI" URL="../Utilities/Error Logging/Log Queued Error.vi"/>
+				<Item Name="Route Error to Queue.vi" Type="VI" URL="../Utilities/Error Logging/Route Error to Queue.vi"/>
 			</Item>
 			<Item Name="Time Management.lvlib" Type="Library" URL="../Utilities/Time Management/Time Management.lvlib"/>
 		</Item>
