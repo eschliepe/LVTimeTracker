@@ -74,7 +74,7 @@ The **Make Inactive** frame works out the Tasks row from the mouse position, the
 
 `Utilities\Time Management\Increment_Decrement by one Day.vi` now steps by calendar date, not 86,400 s, and builds its result exactly as `Get Current Day as Timestamp.vi` does, so the two compare Equal on every date, DST changes included. Its connector pane is unchanged, so the two calls in `Main.vi` need no rewiring.
 
-Side finding, not a bug today: both VIs bundle the date into a date/time record whose DST field is 0, which Date/Time To Seconds reads as standard time. So on any date inside daylight saving time both return 01:00 local instead of 00:00 (the date is right). Setting DST to -1 (automatic) in **both** VIs at once would give true local midnight; changing only one breaks the Equal? check.
+Follow-up (2026-11-01): both VIs used a date/time record with DST = 0, so on dates inside daylight saving time they returned 01:00 instead of 00:00. Both now set DST = -1 (automatic) and return true local midnight on every date; they still compare Equal.
 
 ## 7. Clean-up candidates
 

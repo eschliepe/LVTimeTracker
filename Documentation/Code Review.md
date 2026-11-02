@@ -40,7 +40,7 @@ Everything `Main.vi` uses is executable.
 The event frame writes the `Displayed Day` local variable but sends no "Load Data for Month" (and no Update/Pause), so the time card keeps the previous day's entries under today's date. Writing a local variable fires no Value Change event.
 
 ### 4. Day stepping skips or repeats a day at DST changes — Done
-**Done** on branch `feature/data-structures` (2026-10-31): `Increment_Decrement by one Day.vi` steps the calendar date and builds the result like `Get Current Day as Timestamp.vi`, so they compare Equal across DST changes (checked across 2026-03-08 and 2026-11-01, and month/year rollover). Both return 01:00 rather than 00:00 on DST dates because their date/time record has DST = 0; see `Documentation/Bug Pass Notes.md`.
+**Done** on branch `feature/data-structures` (2026-10-31): `Increment_Decrement by one Day.vi` steps the calendar date and builds the result like `Get Current Day as Timestamp.vi`, so they compare Equal across DST changes (checked across 2026-03-08 and 2026-11-01, and month/year rollover). Follow-up 2026-11-01: both now set the record's DST field to -1, so they return true local midnight on DST dates too (they used to return 01:00).
 
 `Increment_Decrement by one Day.vi` adds/subtracts exactly 86,400 s. On a 23- or 25-hour day that lands an hour off midnight, so a step can skip a day or show one twice. `Main.vi` then compares the result to `Get Current Day as Timestamp.vi` with `Equal?`, which fails, so the running timer stops updating on screen.
 - **Fix direction:** step the date/time record's day of month ±1 and convert back (`Date/Time To Seconds`), or re-snap to local midnight after stepping.
