@@ -135,6 +135,7 @@
 				<Item Name="Test - Text Contains.vi" Type="VI" URL="../Tests/Support/Test - Text Contains.vi"/>
 			</Item>
 			<Item Name="UI Support" Type="Folder">
+				<Item Name="Test Day Rollup.vi" Type="VI" URL="../Tests/UI Support/Test Day Rollup.vi"/>
 				<Item Name="Test Format Entry Row.vi" Type="VI" URL="../Tests/UI Support/Test Format Entry Row.vi"/>
 				<Item Name="Test Initialize Stores.vi" Type="VI" URL="../Tests/UI Support/Test Initialize Stores.vi"/>
 				<Item Name="Test Load Day.vi" Type="VI" URL="../Tests/UI Support/Test Load Day.vi"/>
@@ -147,6 +148,8 @@
 			<Item Name="Run UI Support Tests.vi" Type="VI" URL="../Tests/Run UI Support Tests.vi"/>
 		</Item>
 		<Item Name="UI Support" Type="Folder">
+			<Item Name="Daily Rollup Dialog.vi" Type="VI" URL="../UI Support/Daily Rollup Dialog.vi"/>
+			<Item Name="Day Rollup.vi" Type="VI" URL="../UI Support/Day Rollup.vi"/>
 			<Item Name="Edit Entry Dialog.vi" Type="VI" URL="../UI Support/Edit Entry Dialog.vi"/>
 			<Item Name="Find or Add List Item.vi" Type="VI" URL="../UI Support/Find or Add List Item.vi"/>
 			<Item Name="Format Entry Row.vi" Type="VI" URL="../UI Support/Format Entry Row.vi"/>
