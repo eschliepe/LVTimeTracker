@@ -152,7 +152,6 @@
 			<Item Name="Format Entry Row.vi" Type="VI" URL="../UI Support/Format Entry Row.vi"/>
 			<Item Name="Initialize Stores.vi" Type="VI" URL="../UI Support/Initialize Stores.vi"/>
 			<Item Name="Load Day.vi" Type="VI" URL="../UI Support/Load Day.vi"/>
-			<Item Name="Modify Entry.vi" Type="VI" URL="../UI Support/Modify Entry.vi"/>
 			<Item Name="Project List.vi" Type="VI" URL="../UI Support/Project List.vi"/>
 			<Item Name="Read Default Tasks.vi" Type="VI" URL="../UI Support/Read Default Tasks.vi"/>
 			<Item Name="Save Edited Entry.vi" Type="VI" URL="../UI Support/Save Edited Entry.vi"/>
