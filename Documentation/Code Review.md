@@ -45,12 +45,16 @@ The event frame writes the `Displayed Day` local variable but sends no "Load Dat
 `Increment_Decrement by one Day.vi` adds/subtracts exactly 86,400 s. On a 23- or 25-hour day that lands an hour off midnight, so a step can skip a day or show one twice. `Main.vi` then compares the result to `Get Current Day as Timestamp.vi` with `Equal?`, which fails, so the running timer stops updating on screen.
 - **Fix direction:** step the date/time record's day of month ±1 and convert back (`Date/Time To Seconds`), or re-snap to local midnight after stepping.
 
-### 5. Unhandled messages re-run initialization — Partly done
+### 5. Unhandled messages re-run initialization — Done
+**Done in Erich's `8457d5b` (2026-11-08):** `Initialize` has its own frame, and a separate Default frame raises error 5200 "unhandled message", which is logged.
+
 The main loop's `"Initialize", Default` frame catches every message without its own frame.
 - **Done** on branch `feature/error-logging-cases` (commit `59844e0`): `Error`, `Inactivate Project` and `Delete Time Entry` now have their own frames that pass data/error/timeout through without stopping the loop. The Error frame calls `Log Queued Error.vi`.
 - **Open:** `Initialize` is still the Default frame, so any message added to the enum later without its own frame will still re-run initialization. Consider a separate Default frame that logs "unhandled message" and does nothing else. Fix notes for `Main.vi`: `Documentation/Bug Pass Notes.md`.
 
-### 6. Errors are never reported — Partly done
+### 6. Errors are never reported — Done
+**Done in Erich's `8457d5b` (2026-11-08):** both loops keep their error in a shift register and pass it through `Utilities\Error Logging\Route Error to Queue.vi`, which sends it to the Error frame for logging and stops the loop on a fatal queue error. The Error frame no longer feeds its own logging error back.
+
 - The main loop's `DeQueue State.vi` takes its `error in` from the startup error on every pass, and each frame's `error out` leaves the loop through a plain tunnel, so every pass's error is dropped. The event loop drops its errors too. Nothing shows a dialog or writes a log.
 - **Worst case:** if `Create Queue.vi` / `Queue-Initialize.vi` fail at startup, `Dequeue Element` doesn't run, returns the default element (`Initialize`), and the main loop re-initializes in a tight loop forever.
 - **Done:** an error logger exists (`Utilities/Error Logging/Log Error.vi`, `Log Queued Error.vi`, writing `%LOCALAPPDATA%\LVTimeTracker\Error Log.txt`) and the Error frame calls it.
@@ -71,15 +75,15 @@ In the "Inactivate Task" frame the call to `Projects.lvclass:Write to Data Sourc
 | Issue | Status | Where |
 |---|---|---|
 | Elapsed time can show `:60` — seconds are rounded after the minute split, so 59.6 s shows `00:00:60` | Done (`UI Support\Format Entry Row.vi` rounds first; tested) | `Calculate Time Entry.vi`, `Update Time Entry.vi` |
-| No selection check: Start / double-click with no project or task selected creates an entry with an empty project or task | Done (`Start Entry.vi` refuses with error 5101; tested). Left over: the frame still stores the empty entry as active on that error, see `Documentation/Bug Pass Notes.md` | `Main.vi` "Add Time Entry" frame |
+| No selection check: Start / double-click with no project or task selected creates an entry with an empty project or task | Done (`Start Entry.vi` refuses with error 5101; tested). The leftover (empty entry stored as active on that error) is fixed in `8457d5b` | `Main.vi` "Add Time Entry" frame |
 | "Default" (the template for default tasks) is listed as a real project in the project list and the Edit dialog | Done (migrated to an inactive project; default tasks now in `Settings.ini`) | `Projects.ini`, Update Project List, `Edit Time Entry.vi` |
 | New projects may start inactive: the New Project dialog uses `Add Project Tasks.vi` (not `Add Project.vi`), so "Project Active?" gets the typedef default — probably False, not confirmed | Done (`New Project.vi` saves through `Save Project.vi` with Active TRUE; `865e33b`) | `New Project.vi` |
 | Close dialog "Exit" leaves the running entry open in the file (End Time 0); it resumes on next start if it's in the current month. Intended? | Done: Panel Close? and the Exit menu now queue End Time Entry before Exit when an entry is active | `Main.vi` Panel Close? |
 | Timestamps are written with the Windows decimal separator (`Write Key (Double)`, system decimal point) — a comma locale writes `3844268746,702599` | Done (ISO 8601 UTC strings in schema v2) | `Time Entry-INI.lvclass:Save Time Entry.vi` |
-| Queue never released, user event never destroyed/unregistered | Open (fix notes: `Documentation/Bug Pass Notes.md`) | `Main.vi` |
+| Queue never released, user event never destroyed/unregistered | Done (`8457d5b`: Release Queue, Unregister For Events, Destroy User Event, then Log Error) | `Main.vi` |
 | "Time Entry Active?" kept in two places (event-loop shift register and Main Loop Data), synced by the "Mark Active" user event | Partly done: Main Loop Data now holds `UI State.Active Entry` instead; the event loop still keeps its own flag | `Main.vi` |
 | Copy-pasted, wrong VI descriptions | Done for `Increment_Decrement by one Day.vi` (2026-10-31); `Projects-INI.lvclass:Initialize.vi` was deleted with the old classes | `Projects-INI.lvclass:Initialize.vi`, `Increment_Decrement by one Day.vi` |
-| Task row from right-click is computed from mouse coordinates and row height; the listbox's `Point to Row Column` method would be more robust | Open (fix notes: `Documentation/Bug Pass Notes.md`) | `Main.vi` "Make Inactive" |
+| Task row from right-click is computed from mouse coordinates and row height; the listbox's `Point to Row Column` method would be more robust | Done (`8457d5b`: Point To Row invoke node) | `Main.vi` "Make Inactive" |
 
 ## Design notes for the planned storage change
 
