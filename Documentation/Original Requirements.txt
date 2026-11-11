@@ -5,7 +5,6 @@ Requirements for a new time tracking software.
 Ability to hide projects that are no longer being used.
 Ability to hide tasks in projects that are no longer being used.
 Ability to sort projects and tasks in forward or reverse alphabet.
-Assign projects and tasks priority numbers that can be used to sort by as well, or allow for dragging tasks and projects to places where you want them.
 Even allow for sub tasks that can get appended to the front of the details when exporting or sending to a 3rd party like Zoho.
 Start and Stop timing - can pop up a dialog box to ask about what it is and allow selections from drop downs, can edit in the list without having to double click to edit a line.
 Ability to add additional columns/items so you can add more information to a line for specific tasks.
@@ -18,10 +17,10 @@ Create a report that concatenates the different entries for a particular project
 Add a button next to the text box reports that copies the text to the clipboard.
 Would love to connect it to Jira so that we can select from a list of Jira tasks that are being worked on.
 
-Ability to carve out time in the middle of a currently running task to assign to another piece, so it would stop the current task, reassign some of the time to another task and then restart the original task.
 Add the option for the user to require that some text is entered when starting a task.
 Add ability for the user to specify in a LabVIEW project what project it is and use a shortcut to start the timer for that project and maybe even interact with GIT to retrieve the information necessary to gather commits and collect those as entries in the list.
-Add ability to "split" at a timestame (I think I may have already covered this but thought of it last night and wanted to make sure to capture it) and roll things out.
+Add ability to "split" at a timestame and roll things out.
+Add the ability to insert a task in between a task, whether the current task or not.  This would be a right click menu item and would pop-up a dialog similar to the edit entry dialog and allow the user to select a new project and/or task and the start and stop time for the inserted task.  When the user selects OK, the current task will turn into 3 tasks.  The first is the original task from the original start time to the stop time that is the start time for the inserted task.  Then a new task that is the inserted task with start and end time.  Then a new third task which is the original project and task with a new start time that is the stop time of the inserted task and is either still the active task or is given the orginal tasks end time.
 
 Add buttons to main.vi to the day selection that allow for selecting a day from a calendar reading.
 Add buttons to main.vi for going backward and forward by one month at a time.
