@@ -175,6 +175,52 @@
 		</Item>
 		<Item Name="Main_Process.lvlib" Type="Library" URL="../Main_Process.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="LVTimeTracker" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{A242C54F-25F3-4E9D-8EC4-0427D17368D2}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{BEBB94D8-9776-44EB-83B1-DE87A185B116}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{78DEE7C8-8EFF-4E44-99B2-AD338DA7FB86}</Property>
+				<Property Name="Bld_buildSpecDescription" Type="Str">LVTimeTracker desktop application. Startup VI: Main.vi.</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">LVTimeTracker</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/LVTimeTracker</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{632FA82C-2F0E-4972-8DC4-32C81ADA343B}</Property>
+				<Property Name="Bld_version.build" Type="Int">0</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Bld_version.minor" Type="Int">0</Property>
+				<Property Name="Bld_version.patch" Type="Int">0</Property>
+				<Property Name="Destination[0].destName" Type="Str">LVTimeTracker.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/LVTimeTracker/LVTimeTracker.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/LVTimeTracker/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CCBA8AAC-DF41-4875-AFBB-2418C3605762}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main_Process.lvlib/Main.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">Erich Schlieper</Property>
+				<Property Name="TgtF_enableDebugging" Type="Bool">false</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">LVTimeTracker</Property>
+				<Property Name="TgtF_internalName" Type="Str">LVTimeTracker</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright 2026 Erich Schlieper</Property>
+				<Property Name="TgtF_productName" Type="Str">LVTimeTracker</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{4F8C6A09-1D9F-431F-A060-5FD1CA6D6168}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">LVTimeTracker.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+		</Item>
 	</Item>
 </Project>
