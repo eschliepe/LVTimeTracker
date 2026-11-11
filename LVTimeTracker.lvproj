@@ -132,6 +132,7 @@
 				<Item Name="Test - Prepare Case Folder.vi" Type="VI" URL="../Tests/Support/Test - Prepare Case Folder.vi"/>
 				<Item Name="Test - Read Text Without CR.vi" Type="VI" URL="../Tests/Support/Test - Read Text Without CR.vi"/>
 				<Item Name="Test - String Arrays Equal.vi" Type="VI" URL="../Tests/Support/Test - String Arrays Equal.vi"/>
+				<Item Name="Test - Read Task Rows.vi" Type="VI" URL="../Tests/Support/Test - Read Task Rows.vi"/>
 				<Item Name="Test - Text Contains.vi" Type="VI" URL="../Tests/Support/Test - Text Contains.vi"/>
 			</Item>
 			<Item Name="UI Support" Type="Folder">
@@ -143,25 +144,31 @@
 				<Item Name="Test Project Edits.vi" Type="VI" URL="../Tests/UI Support/Test Project Edits.vi"/>
 				<Item Name="Test Save Edited Entry.vi" Type="VI" URL="../Tests/UI Support/Test Save Edited Entry.vi"/>
 				<Item Name="Test Start and Stop Entry.vi" Type="VI" URL="../Tests/UI Support/Test Start and Stop Entry.vi"/>
+				<Item Name="Test Task Rows.vi" Type="VI" URL="../Tests/UI Support/Test Task Rows.vi"/>
 			</Item>
 			<Item Name="Run Storage Tests.vi" Type="VI" URL="../Tests/Run Storage Tests.vi"/>
 			<Item Name="Run UI Support Tests.vi" Type="VI" URL="../Tests/Run UI Support Tests.vi"/>
 		</Item>
 		<Item Name="UI Support" Type="Folder">
+			<Item Name="Apply Task Rows.vi" Type="VI" URL="../UI Support/Apply Task Rows.vi"/>
 			<Item Name="Daily Rollup Dialog.vi" Type="VI" URL="../UI Support/Daily Rollup Dialog.vi"/>
 			<Item Name="Day Rollup.vi" Type="VI" URL="../UI Support/Day Rollup.vi"/>
 			<Item Name="Edit Entry Dialog.vi" Type="VI" URL="../UI Support/Edit Entry Dialog.vi"/>
+			<Item Name="Filter Task Rows.vi" Type="VI" URL="../UI Support/Filter Task Rows.vi"/>
 			<Item Name="Find or Add List Item.vi" Type="VI" URL="../UI Support/Find or Add List Item.vi"/>
 			<Item Name="Format Entry Row.vi" Type="VI" URL="../UI Support/Format Entry Row.vi"/>
 			<Item Name="Initialize Stores.vi" Type="VI" URL="../UI Support/Initialize Stores.vi"/>
 			<Item Name="Load Day.vi" Type="VI" URL="../UI Support/Load Day.vi"/>
+			<Item Name="Merge Task Rows.vi" Type="VI" URL="../UI Support/Merge Task Rows.vi"/>
 			<Item Name="Project List.vi" Type="VI" URL="../UI Support/Project List.vi"/>
+			<Item Name="Project Task Rows.vi" Type="VI" URL="../UI Support/Project Task Rows.vi"/>
 			<Item Name="Read Default Tasks.vi" Type="VI" URL="../UI Support/Read Default Tasks.vi"/>
 			<Item Name="Save Edited Entry.vi" Type="VI" URL="../UI Support/Save Edited Entry.vi"/>
 			<Item Name="Save Project.vi" Type="VI" URL="../UI Support/Save Project.vi"/>
 			<Item Name="Set Task Active.vi" Type="VI" URL="../UI Support/Set Task Active.vi"/>
 			<Item Name="Start Entry.vi" Type="VI" URL="../UI Support/Start Entry.vi"/>
 			<Item Name="Stop Entry.vi" Type="VI" URL="../UI Support/Stop Entry.vi"/>
+			<Item Name="Task Edit Row.ctl" Type="VI" URL="../UI Support/Task Edit Row.ctl"/>
 			<Item Name="Task List.vi" Type="VI" URL="../UI Support/Task List.vi"/>
 			<Item Name="UI State.ctl" Type="VI" URL="../UI Support/UI State.ctl"/>
 		</Item>
