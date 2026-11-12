@@ -129,16 +129,19 @@
 				<Item Name="Test - Check All.vi" Type="VI" URL="../Tests/Support/Test - Check All.vi"/>
 				<Item Name="Test - Check.vi" Type="VI" URL="../Tests/Support/Test - Check.vi"/>
 				<Item Name="Test - Finish.vi" Type="VI" URL="../Tests/Support/Test - Finish.vi"/>
+				<Item Name="Test - Format Entries.vi" Type="VI" URL="../Tests/Support/Test - Format Entries.vi"/>
+				<Item Name="Test - Insert Case.vi" Type="VI" URL="../Tests/Support/Test - Insert Case.vi"/>
 				<Item Name="Test - Prepare Case Folder.vi" Type="VI" URL="../Tests/Support/Test - Prepare Case Folder.vi"/>
+				<Item Name="Test - Read Task Rows.vi" Type="VI" URL="../Tests/Support/Test - Read Task Rows.vi"/>
 				<Item Name="Test - Read Text Without CR.vi" Type="VI" URL="../Tests/Support/Test - Read Text Without CR.vi"/>
 				<Item Name="Test - String Arrays Equal.vi" Type="VI" URL="../Tests/Support/Test - String Arrays Equal.vi"/>
-				<Item Name="Test - Read Task Rows.vi" Type="VI" URL="../Tests/Support/Test - Read Task Rows.vi"/>
 				<Item Name="Test - Text Contains.vi" Type="VI" URL="../Tests/Support/Test - Text Contains.vi"/>
 			</Item>
 			<Item Name="UI Support" Type="Folder">
 				<Item Name="Test Day Rollup.vi" Type="VI" URL="../Tests/UI Support/Test Day Rollup.vi"/>
 				<Item Name="Test Format Entry Row.vi" Type="VI" URL="../Tests/UI Support/Test Format Entry Row.vi"/>
 				<Item Name="Test Initialize Stores.vi" Type="VI" URL="../Tests/UI Support/Test Initialize Stores.vi"/>
+				<Item Name="Test Insert Entry.vi" Type="VI" URL="../Tests/UI Support/Test Insert Entry.vi"/>
 				<Item Name="Test Load Day.vi" Type="VI" URL="../Tests/UI Support/Test Load Day.vi"/>
 				<Item Name="Test Project and Task Lists.vi" Type="VI" URL="../Tests/UI Support/Test Project and Task Lists.vi"/>
 				<Item Name="Test Project Edits.vi" Type="VI" URL="../Tests/UI Support/Test Project Edits.vi"/>
@@ -158,6 +161,7 @@
 			<Item Name="Find or Add List Item.vi" Type="VI" URL="../UI Support/Find or Add List Item.vi"/>
 			<Item Name="Format Entry Row.vi" Type="VI" URL="../UI Support/Format Entry Row.vi"/>
 			<Item Name="Initialize Stores.vi" Type="VI" URL="../UI Support/Initialize Stores.vi"/>
+			<Item Name="Insert Entry.vi" Type="VI" URL="../UI Support/Insert Entry.vi"/>
 			<Item Name="Load Day.vi" Type="VI" URL="../UI Support/Load Day.vi"/>
 			<Item Name="Merge Task Rows.vi" Type="VI" URL="../UI Support/Merge Task Rows.vi"/>
 			<Item Name="Project List.vi" Type="VI" URL="../UI Support/Project List.vi"/>
