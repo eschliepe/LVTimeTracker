@@ -204,7 +204,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{632FA82C-2F0E-4972-8DC4-32C81ADA343B}</Property>
-				<Property Name="Bld_version.build" Type="Int">0</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.minor" Type="Int">0</Property>
 				<Property Name="Bld_version.patch" Type="Int">0</Property>
@@ -231,6 +231,55 @@
 				<Property Name="TgtF_targetfileGUID" Type="Str">{4F8C6A09-1D9F-431F-A060-5FD1CA6D6168}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">LVTimeTracker.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+			<Item Name="Time Tracker Installer" Type="Installer">
+				<Property Name="Destination[0].name" Type="Str">LVTimeTracker</Property>
+				<Property Name="Destination[0].parent" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
+				<Property Name="Destination[0].tag" Type="Str">{CAE791FB-2152-4DC4-ACBC-B27BAEB2561F}</Property>
+				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
+				<Property Name="DestinationCount" Type="Int">1</Property>
+				<Property Name="DistPart[0].flavorID" Type="Str"></Property>
+				<Property Name="DistPart[0].productID" Type="Str"></Property>
+				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Run-Time Engine 2024 (64-bit)</Property>
+				<Property Name="DistPart[0].upgradeCode" Type="Str">{A87DB6EF-77CB-397F-A762-D95F372FCAD4}</Property>
+				<Property Name="DistPartCount" Type="Int">1</Property>
+				<Property Name="INST_author" Type="Str">Choose Movement Consulting</Property>
+				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
+				<Property Name="INST_buildLocation" Type="Path">../builds/LVTimeTracker/Time Tracker Installer</Property>
+				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
+				<Property Name="INST_buildSpecName" Type="Str">Time Tracker Installer</Property>
+				<Property Name="INST_defaultDir" Type="Str">{CAE791FB-2152-4DC4-ACBC-B27BAEB2561F}</Property>
+				<Property Name="INST_installerName" Type="Str">install.exe</Property>
+				<Property Name="INST_productName" Type="Str">LVTimeTracker</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.1</Property>
+				<Property Name="InstSpecBitness" Type="Str">64-bit</Property>
+				<Property Name="InstSpecVersion" Type="Str">25000000</Property>
+				<Property Name="MSI_arpCompany" Type="Str">Erich Schlieper</Property>
+				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
+				<Property Name="MSI_distID" Type="Str">{9D634D2A-AD18-4954-A014-4B216B71CD54}</Property>
+				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
+				<Property Name="MSI_osCheck" Type="Int">0</Property>
+				<Property Name="MSI_upgradeCode" Type="Str">{4E11D5CA-C2C6-4CC0-ADC0-162C554F8D1B}</Property>
+				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
+				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
+				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
+				<Property Name="RegDestCount" Type="Int">1</Property>
+				<Property Name="Source[0].dest" Type="Str">{CAE791FB-2152-4DC4-ACBC-B27BAEB2561F}</Property>
+				<Property Name="Source[0].File[0].dest" Type="Str">{CAE791FB-2152-4DC4-ACBC-B27BAEB2561F}</Property>
+				<Property Name="Source[0].File[0].name" Type="Str">LVTimeTracker.exe</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">LVTimeTracker</Property>
+				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">LVTimeTracker</Property>
+				<Property Name="Source[0].File[0].Shortcut[1].destIndex" Type="Int">2</Property>
+				<Property Name="Source[0].File[0].Shortcut[1].name" Type="Str">LVTT</Property>
+				<Property Name="Source[0].File[0].Shortcut[1].subDir" Type="Str">LVTimeTracker</Property>
+				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">2</Property>
+				<Property Name="Source[0].File[0].tag" Type="Str">{4F8C6A09-1D9F-431F-A060-5FD1CA6D6168}</Property>
+				<Property Name="Source[0].FileCount" Type="Int">1</Property>
+				<Property Name="Source[0].name" Type="Str">LVTimeTracker</Property>
+				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/LVTimeTracker</Property>
+				<Property Name="Source[0].type" Type="Str">EXE</Property>
+				<Property Name="SourceCount" Type="Int">1</Property>
 			</Item>
 		</Item>
 	</Item>

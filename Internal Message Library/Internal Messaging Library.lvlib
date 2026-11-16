@@ -56,6 +56,7 @@
 	<Item Name="Queue-Inactivate Project.vi" Type="VI" URL="../Queue-Inactivate Project.vi"/>
 	<Item Name="Queue-Inactivate Task.vi" Type="VI" URL="../Queue-Inactivate Task.vi"/>
 	<Item Name="Queue-Initialize.vi" Type="VI" URL="../Queue-Initialize.vi"/>
+	<Item Name="Queue-Insert Time Entry.vi" Type="VI" URL="../Queue-Insert Time Entry.vi"/>
 	<Item Name="Queue-Load Data for Month.vi" Type="VI" URL="../Queue-Load Data for Month.vi"/>
 	<Item Name="Queue-Load Data.vi" Type="VI" URL="../Queue-Load Data.vi"/>
 	<Item Name="Queue-Modify Time Entry.vi" Type="VI" URL="../Queue-Modify Time Entry.vi"/>
