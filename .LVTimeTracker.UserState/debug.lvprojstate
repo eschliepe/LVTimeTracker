@@ -1,0 +1,134 @@
+<Configuration>
+  <Target name="My Computer">
+    <EnableDebuggingForAllVIs>0</EnableDebuggingForAllVIs>
+    <VI name="Edit Entry Dialog.vi">
+      <Breakpoints>
+        <NodeIndexes>
+        </NodeIndexes>
+        <SignalIndexes>
+        </SignalIndexes>
+      </Breakpoints>
+      <Probes>
+        <Generic>
+          <SignalUID value="2158"/>
+          <SignalUID value="2155"/>
+        </Generic>
+      </Probes>
+    </VI>
+    <VI name="Main_Process.lvlib:Main.vi">
+      <Breakpoints>
+        <NodeIndexes>
+        </NodeIndexes>
+        <SignalIndexes>
+        </SignalIndexes>
+      </Breakpoints>
+      <Probes>
+        <Generic>
+          <SignalUID value="373"/>
+          <SignalUID value="802"/>
+          <SignalUID value="3023"/>
+          <SignalUID value="3914"/>
+          <SignalUID value="15761"/>
+          <SignalUID value="11581"/>
+          <SignalUID value="8829"/>
+          <SignalUID value="10845" displayName="Active Entry"/>
+          <SignalUID value="4577"/>
+          <SignalUID value="3872"/>
+          <SignalUID value="6381"/>
+          <SignalUID value="10917"/>
+          <SignalUID value="239"/>
+          <SignalUID value="5198"/>
+          <SignalUID value="12267"/>
+          <SignalUID value="7749"/>
+          <SignalUID value="6028"/>
+        </Generic>
+        <Smart>
+          <Probe signalUID="3237" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\StringProbe.vi" displayName="String"/>
+          <Probe signalUID="5423" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\ConditionalErrorProbe.vi" displayName="error out"/>
+          <Probe signalUID="8459" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\StringProbe.vi"/>
+        </Smart>
+      </Probes>
+    </VI>
+    <VI name="Project Store-INI.lvclass:Read from Data Source.vi">
+      <Breakpoints>
+        <NodeIndexes>
+        </NodeIndexes>
+        <SignalIndexes>
+        </SignalIndexes>
+      </Breakpoints>
+      <Probes>
+        <Generic>
+          <SignalUID value="20774"/>
+        </Generic>
+      </Probes>
+    </VI>
+    <VI name="Read Time Entry File.vi">
+      <Breakpoints>
+        <NodeIndexes>
+        </NodeIndexes>
+        <SignalIndexes>
+        </SignalIndexes>
+      </Breakpoints>
+      <Probes>
+        <Generic>
+          <SignalUID value="20767"/>
+          <SignalUID value="20766"/>
+        </Generic>
+        <Smart>
+          <Probe signalUID="20768" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\ConditionalErrorProbe.vi"/>
+          <Probe signalUID="20789" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\ConditionalErrorProbe.vi"/>
+          <Probe signalUID="20773" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\ConditionalErrorProbe.vi"/>
+          <Probe signalUID="20785" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\StringProbe.vi"/>
+        </Smart>
+      </Probes>
+    </VI>
+    <VI name="Start Entry.vi">
+      <Breakpoints>
+        <NodeIndexes>
+        </NodeIndexes>
+        <SignalIndexes>
+        </SignalIndexes>
+      </Breakpoints>
+      <Probes>
+        <Generic>
+          <SignalUID value="20609"/>
+          <SignalUID value="20601"/>
+          <SignalUID value="20602"/>
+          <SignalUID value="20617" displayName="New Time Entry"/>
+        </Generic>
+      </Probes>
+    </VI>
+    <VI name="Time Entry Store-INI.lvclass:Save Entry.vi">
+      <Breakpoints>
+        <NodeIndexes>
+        </NodeIndexes>
+        <SignalIndexes>
+        </SignalIndexes>
+      </Breakpoints>
+      <Probes>
+        <Generic>
+        </Generic>
+        <Smart>
+          <Probe signalUID="20763" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\StringProbe.vi"/>
+          <Probe signalUID="20765" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\StringProbe.vi"/>
+          <Probe signalUID="20767" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\PathProbe.vi"/>
+        </Smart>
+      </Probes>
+    </VI>
+    <VI name="Time Management.lvlib:ISO 8601 UTC to Timestamp.vi">
+      <Breakpoints>
+        <NodeIndexes>
+        </NodeIndexes>
+        <SignalIndexes>
+        </SignalIndexes>
+      </Breakpoints>
+      <Probes>
+        <Generic>
+        </Generic>
+        <Smart>
+          <Probe signalUID="20624" menuID="-1" itemID="-1" path="C:\Program Files\National Instruments\LabVIEW 2026\vi.lib\_probes\default\StringProbe.vi" displayName="ISO 8601 UTC"/>
+        </Smart>
+      </Probes>
+    </VI>
+  </Target>
+</Configuration>
