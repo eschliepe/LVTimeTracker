@@ -25,3 +25,12 @@ Add the ability to insert a task in between a task, whether the current task or 
 Add buttons to main.vi to the day selection that allow for selecting a day from a calendar reading.
 Add buttons to main.vi for going backward and forward by one month at a time.
 Add button to main.vi for going backwards or forwards to the next populated day.
+Add an indicator to show the tracked time in the displayed day.
+Add a feature to split the current task, with the new start time to become the end time of the task that was running.
+Document or add a way to set the default tasks.
+
+Alphabetize the project and tasks lists when they are loaded.
+When the project and task for the active task is changed, we need to update the selections in the Project and Task windows.
+
+If an entry ends in a period, there is no need to add a semi colon between concatenated entries in the roll-up dialog.  
+Add the feature to close the front panel/kill the EXE when run from the EXE and not just leave the FP open to start again.

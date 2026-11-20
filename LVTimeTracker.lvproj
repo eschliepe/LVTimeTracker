@@ -128,6 +128,7 @@
 			<Item Name="Support" Type="Folder">
 				<Item Name="Test - Check All.vi" Type="VI" URL="../Tests/Support/Test - Check All.vi"/>
 				<Item Name="Test - Check.vi" Type="VI" URL="../Tests/Support/Test - Check.vi"/>
+				<Item Name="Test - Day Total Entries Cases.vi" Type="VI" URL="../Tests/Support/Test - Day Total Entries Cases.vi"/>
 				<Item Name="Test - Finish.vi" Type="VI" URL="../Tests/Support/Test - Finish.vi"/>
 				<Item Name="Test - Format Entries.vi" Type="VI" URL="../Tests/Support/Test - Format Entries.vi"/>
 				<Item Name="Test - Insert Case.vi" Type="VI" URL="../Tests/Support/Test - Insert Case.vi"/>
@@ -139,6 +140,7 @@
 			</Item>
 			<Item Name="UI Support" Type="Folder">
 				<Item Name="Test Day Rollup.vi" Type="VI" URL="../Tests/UI Support/Test Day Rollup.vi"/>
+				<Item Name="Test Day Total.vi" Type="VI" URL="../Tests/UI Support/Test Day Total.vi"/>
 				<Item Name="Test Format Entry Row.vi" Type="VI" URL="../Tests/UI Support/Test Format Entry Row.vi"/>
 				<Item Name="Test Initialize Stores.vi" Type="VI" URL="../Tests/UI Support/Test Initialize Stores.vi"/>
 				<Item Name="Test Insert Entry.vi" Type="VI" URL="../Tests/UI Support/Test Insert Entry.vi"/>
@@ -156,6 +158,8 @@
 			<Item Name="Apply Task Rows.vi" Type="VI" URL="../UI Support/Apply Task Rows.vi"/>
 			<Item Name="Daily Rollup Dialog.vi" Type="VI" URL="../UI Support/Daily Rollup Dialog.vi"/>
 			<Item Name="Day Rollup.vi" Type="VI" URL="../UI Support/Day Rollup.vi"/>
+			<Item Name="Day Total Entries.vi" Type="VI" URL="../UI Support/Day Total Entries.vi"/>
+			<Item Name="Day Total.vi" Type="VI" URL="../UI Support/Day Total.vi"/>
 			<Item Name="Edit Entry Dialog.vi" Type="VI" URL="../UI Support/Edit Entry Dialog.vi"/>
 			<Item Name="Filter Task Rows.vi" Type="VI" URL="../UI Support/Filter Task Rows.vi"/>
 			<Item Name="Find or Add List Item.vi" Type="VI" URL="../UI Support/Find or Add List Item.vi"/>
