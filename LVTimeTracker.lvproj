@@ -121,6 +121,7 @@
 				<Item Name="Test ISO 8601 Round Trip.vi" Type="VI" URL="../Tests/Storage/Test ISO 8601 Round Trip.vi"/>
 				<Item Name="Test Migrate v1 Data.vi" Type="VI" URL="../Tests/Storage/Test Migrate v1 Data.vi"/>
 				<Item Name="Test Project Store INI Round Trip.vi" Type="VI" URL="../Tests/Storage/Test Project Store INI Round Trip.vi"/>
+				<Item Name="Test Read Day Entries DST.vi" Type="VI" URL="../Tests/Storage/Test Read Day Entries DST.vi"/>
 				<Item Name="Test Remove Project.vi" Type="VI" URL="../Tests/Storage/Test Remove Project.vi"/>
 				<Item Name="Test Running Entry.vi" Type="VI" URL="../Tests/Storage/Test Running Entry.vi"/>
 				<Item Name="Test Time Entry Month Files.vi" Type="VI" URL="../Tests/Storage/Test Time Entry Month Files.vi"/>

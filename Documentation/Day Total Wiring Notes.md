@@ -40,5 +40,5 @@ Wire `UI State.Total Entries` into `Daily Rollup Dialog.vi`'s new **Total Entrie
 
 ## Things to know
 
-- **25-hour day (the autumn DST change):** `Storage\Support\Read Day Entries.vi` reads each day as 24 hours from local midnight, so on that one day entries starting between 23:00 and 24:00 are not returned for that day or the next. That affects the TimeCard as well as the total. It is an existing limitation, noted here and not changed.
+- **DST-change days:** `Storage\Support\Read Day Entries.vi` now returns the entries that start between local midnight and the next local midnight (from `Increment_Decrement by one Day.vi`), for both bounds (NO CHANGE for the day start, Increment for the next), so the 23-hour spring day and the 25-hour autumn day are covered exactly (tested in `Tests\Storage\Test Read Day Entries DST.vi`). Earlier it read 24 hours from a day start that could be an hour off on those days (it kept the DST flag of the given time), so 8 Mar also showed 7 Mar 23:00-24:00 and 9 Mar 00:00-01:00, and 1 Nov missed 00:00-01:00 and 23:00-24:00. The de-duplication by ID in `Day Total Entries.vi` is no longer needed for that case but does no harm.
 - The DST test cases assume US Central time (this PC's time zone).
